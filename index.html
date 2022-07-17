@@ -1,81 +1,106 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogify : </title>
-    <meta content="Make blog posts online! Ever wanted to get your word out? This is the place for you." property="og:description" />
-    <meta content="https://www.blogifys.tk/" property="og:url" />
+    <title>Blogify : Homepage</title>
+    <meta content="Blogifys: Build a Better Blog | Tips, tricks, and tools for creating your own" property="og:title" />
+    <meta content="Blogifys is a blog directory that offers easy blog software and blog hosting, as well as tips on how to blog and attract readers." property="og:description" />
+    <meta content="https://www.blogifys.tk" property="og:url" />
     <meta content="https://cdn.discordapp.com/attachments/565269496101863425/960207136393146368/Earth.png" property="og:image" />
-    <meta name='description' content='Make blog posts online! Ever wanted to get your word out? This is the place for you.'>
     <meta content="#5900ac" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="editor.css">
-    <link rel="stylesheet" href="blog.css">
+  <meta name="msvalidate.01" content="DE665725F63CCD79F24C1565C1A5521F" />
+  <meta name='description' content='Make blog posts online! Ever wanted to get your word out? This is the place for you.'>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lazy-attr@1.2.3/dist/lazy-attr.js" type="text/javascript"></script>
 <link href="https://unpkg.com/lazy-attr@1.2.3/dist/lazy-attr-animation.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/home.css">
 <script>
   function json(url) {
   return fetch(url).then(res => res.json());
 }
  console.log(`%cAttention!`, `color: red; font-size: 32px; font-weight: 900;`);
     console.log(
-      `%cIf someone told you to paste something in this console, it's probably against the TOS and could steal your information.`,
+      `%cIf someone told you to paste something in this console, it's probably against the TOS and could steal your informatation.`,
       `color: darkred; font-size: 16px; font-weight: 700;`
     )
 
 </script>
 </head>
 <body>
+<center><p class='Banner' lazy-animation="zoomout" style="font-family:Be Vietnam Pro; color:#000000; background-color:#8785ea">Blogifys is currently being Remade.</p></center>
   
     <nav lazy-animation="zoomout" class="navbar">
+      
         <img lazy-animation="zoomout" src="img/logo.png" class="logo" alt="">
         <ul lazy-animation="zoomout" class="links-container">
-            <li lazy-animation="zoomout" class="link-item"><a href="/" class="link">home</a></li>
-            <li lazy-animation="zoomout" class="link-item"><a href="/editor" class="link">editor</a></li>
-          <li lazy-animation="zoomout" class="link-item"><a href="https://trello.com/b/736PJzCr/blogify-updates" class="link">updates</a></li>
-           <li lazy-animation="zoomout" class="link-item"><a href="https://discord.gg/UVaPVQZrGk" class="link">Discord</a></li>
+            <li lazy-animation="zoomout" class="link-item"><a href="/" class="link">home</a><Skeleton/></li>
+            <li lazy-animation="zoomout" class="link-item"><a href="/editor" lazy-animation="zoomout" class="link">editor</a><Skeleton/></li>
+          <li lazy-animation="zoomout" class="link-item"><a href="https://trello.com/b/736PJzCr/blogify-updates" class="link">updates</a><Skeleton/></li>
+           <li class="link-item"><a href="https://discord.gg/UVaPVQZrGk" class="link">Discord</a></li>
         </ul>
     </nav>
- 
+
+
+    <header lazy-animation="zoomout" class="header">
+        <div lazy-animation="zoomout" class="content">
+          
+            <h1 lazy-animation="zoomout" class="heading">
+                <span lazy-animation="zoomout" class="no-fill">Welcome to Blogify</span>
+                                <span lazy-animation="zoomout" class="small">The place to blog</span>
+              
+            </h1>
+            <a lazy-animation="zoomout" href="/editor" class="btn">write a blog</a>
+          
+          <SnackbarProvider maxSnack={3}>
+
+            
+    <App />
+      
+</SnackbarProvider>
+          
+          
+        </div>
+      
+    </header>
+  
     <!-- blog section -->
-    <section lazy-animation="zoomout" class="blogs-section">
-        <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
-        </div> 
-         <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
-        </div> 
-         <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
-        </div> 
-         <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
-        </div> 
-         <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
+    <section lazy-animation="corner-bottom-left" class="blogs-section">
+        <div class="blog-card" lazy-animation="zoomout">
+            <img src="img/header.png" class="blog-image" alt="" lazy-animation="zoomout">
+            <h1 lazy-animation="zoomout" class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p lazy-animation="zoomout" class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a lazy-animation="zoomout" href="/" class="btn dark">read</a>
+            
+             <div class="blog-card" lazy-animation="zoomout">
+            <img src="img/header.png" class="blog-image" alt="" lazy-animation="zoomout">
+            <h1 lazy-animation="zoomout" class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p lazy-animation="zoomout" class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a lazy-animation="zoomout" href="/" class="btn dark">read</a>
+                 
+                  <div class="blog-card" lazy-animation="zoomout">
+            <img src="img/header.png" class="blog-image" alt="" lazy-animation="zoomout">
+            <h1 lazy-animation="zoomout" class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p lazy-animation="zoomout" class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a lazy-animation="zoomout" href="/" class="btn dark">read</a>
+                      
+                       <div class="blog-card" lazy-animation="zoomout">
+            <img src="img/header.png" class="blog-image" alt="" lazy-animation="zoomout">
+            <h1 lazy-animation="zoomout" class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p lazy-animation="zoomout" class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a lazy-animation="zoomout" href="/" class="btn dark">read</a>
         </div> 
     </section>
 
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
 </body>
-      <center><p>2022 |<a href = "https://www.blogifys.tk" target = "_self"> Blogify</a>
+     <center><p lazy-animation="zoomout" >2022 |<a href = "https://www.blogifys.tk" target = "_self"> Blogify</a>
 </p></center>
 </html>
